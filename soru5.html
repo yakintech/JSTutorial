@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="data1">
+        <input type="text" id="data2">
+    </div>
+    <div>
+        <button onclick="Carp()">Carp</button>
+        <button onclick="Topla()">Topla</button>
+
+    </div>
+</body>
+</html>
+<script>
+    // Ekrana 2 input ve 2 buton koy. Birinci buton çarpma işlemi, ikinci buton toplama işlemi yapsın
+    function Carp(){
+        var x = document.getElementById("data1").value;
+        var y = document.getElementById("data2").value;
+        alert(x * y);
+    }
+
+    function Topla(){
+        var x = document.getElementById("data1").value;
+        var y = document.getElementById("data2").value;
+        alert(Number(x) + Number(y));
+    }
+
+
+</script>
