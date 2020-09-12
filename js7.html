@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" style="width: 200px; height: 200px; background-color: #000000;">
+    </div>
+    <div style="text-align: center;">
+        <input type="text" id="color">
+    </div>
+    <div style="text-align: center;">
+        <button onclick="Change()">Değiştir</button>
+    </div>
+</body>
+</html>
+<script>
+    //Butona bastığında box rengini inputta girdiği değer yapsın
+    function Change(){
+        var renk = document.getElementById("color").value;
+        document.getElementById("box").style.backgroundColor = renk;
+    }   
+</script>

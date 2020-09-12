@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+
+<div>
+    
+    <button onclick="Merhaba()">Merhaba De La</button>
+</div>
+<div>
+    <label for="">Müşteri Adı:</label>
+    <input type="text" id="ad">
+</div>
+<div>
+    <button onclick="ShowName()">Müşteri Adını Söyle</button>
+</div>
+</body>
+</html>
+<script>
+    function ShowName(){
+        var name = document.getElementById("ad").value;
+        alert(name);
+    }
+    
+    function Merhaba(){
+
+        // var sayi = 5;
+        // sayi = sayi + 1;
+        // alert(sayi)
+
+        var sayi = 3;
+        sayi++;
+        sayi--;
+        alert(sayi);
+
+    }
+
+    //  f(x) = 2x + 1
+    //  f(x,y) = 2x + y + 1
+    // numeric, string
+    // alert("Hello world!");
+
+</script>

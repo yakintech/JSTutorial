@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+    <div>
+        <input type="text" id="telefon">
+    </div>
+    <div>
+        <button onclick="TelHesap()">Sonuç</button>
+    </div>
+    <div>
+        <input type="text" id="telefon2">
+    </div>
+</body>
+
+</html>
+<script>
+    function TelHesap() {
+        var tel = document.getElementById("telefon").value;
+        var tel2 = "+90" + tel;
+        document.getElementById("telefon2").value = tel2;
+    }
+    // 1) sonuc butonuna bastığında datayı al
+    // 2) aldığın datanın soluna +90 ekle
+    // 3) 2. inputa bunu yaz
+
+
+
+
+    //Metinsel, numeric, boolean
+    //undefined, null
+    var ad;
+    ad = -25.4
+    var onlinedurum = true;
+    //  var onlinedurum = false;
+    console.log(ad);
+
+</script>
