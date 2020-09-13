@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Hello()">Merhaba DE</button>
+</body>
+</html>
+<script>
+
+    //f(x,y) = 2x + y + 1
+    //f(2,3)
+
+    var data = Math.sin(90);
+    console.log(data);
+
+    var fullname = MetinTopla('Çağatay','Yıldız');
+    console.log(fullname);
+    
+    function MetinTopla(metin1, metin2){
+        var sonuc = metin1 + ' ' + metin2;
+        return sonuc;
+    }
+
+    function Hello(){
+        console.log("Hello JS!");
+    }
+
+
+    var x = 11;
+
+    function Test()
+    {
+        var a = 3;
+
+        //
+    }
+
+    //console.log(a);
+
+
+    //Dışarıdan aldığı sayının sinüsünü hesaplayan ve üstüne 2 ekleyen fonksiyon
+    function SinHesap(sayi){
+        var sonuc = Math.sin(sayi) + 2;
+        return sonuc;
+    }
+
+    //Oluşturduğum sinüs hesaplama fonksiyonundan yaralanıp sonucu 3 ile çarpan ve değeri bana söyleyen fonksiyon
+    function SonHesap(sayi){
+        var sonuc = SinHesap(sayi);
+        return sonuc;
+    }
+
+</script>

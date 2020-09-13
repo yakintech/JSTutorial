@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="fiyat">
+    </div>
+    <div>
+        <button onclick="KDVHesap()">KDV Hesapla</button>
+    </div>
+</body>
+</html>
+<script>
+
+
+
+//Eğer fiyat 100 den büyükse KDV yi 18 den hesapla DEĞİLSE 8 den hesapla alert olarak yaz!
+function KDVHesap(){
+    var fiyat = document.getElementById("fiyat").value;
+
+    if(fiyat >= 100){
+        alert(fiyat * 1.18);
+    }
+    else{
+        alert(fiyat * 1.08);
+    }
+}
+
+</script>
