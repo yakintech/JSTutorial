@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">User Name</label>
+        <input type="text" id="username">
+    </div>
+    <div>
+        <label for="">Password</label>
+        <input type="password" id="password">
+    </div>
+    <div>
+        <button onclick="Login()">Giriş</button>
+    </div>
+
+</body>
+</html>
+<script>
+//Kullanıcı Login butonuna bastığında kullanıcı adı "freddy" ve şifre "123" ise ekrana "Hoşgeldiniz!" yaz. DEĞİLSE "hayırdır??"
+
+function Login(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if(username == "freddy" && password == "123"){
+        alert("Hoşgeldiniz!");
+    }
+    else{
+        alert("Hayırdır kardeşşşş!");
+    }
+}
+</script>
