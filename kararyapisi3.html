@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <input type="text" id="not">
+    </div>
+    <div>
+        <button onclick="NotHesap()">Hesap</button>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    //Bir input bir buton koy. Butona tıklandığında girilen not 50 den büyükse "GEÇTİ" değilse "Hoca bıraktı!" yazsın
+
+    function NotHesap() {
+        var not = document.getElementById("not").value;
+
+        if (not >= 0 && not <= 100) 
+        {
+            if (not >= 50) {
+                alert("Geçti")
+            }
+            else {
+                alert("Hoca bıraktı!");
+            }
+        }
+        else{
+            alert("Geçerli not giriniz!");
+        }
+
+    }
+</script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <input type="text" id="not">
+    </div>
+    <div>
+        <button onclick="Hesapla()">Not Hesap</button>
+    </div>
+</body>
+</html>
+<script>
+    //Lisedeki gibi not hesapla
+    function Hesapla(){
+        var not = document.getElementById("not").value;
+
+        if(not >= 0 && not < 45){
+            alert("Tornacıya yolla!");
+        }
+        else if(not >= 45 && not < 55){
+            alert("Akmasa da damlıyor!");
+        }
+        else if(not >= 55 && not < 70){
+            alert("etliye sütlüye bulaşmaz")
+        }
+        else if(not >= 70 && not < 85){
+            alert("yapamıyorum değil yapmıyorum...(AKIN)")
+        }
+        else if(not >= 85 && not <= 100){
+            alert("İzmir Fen Lisesi");
+        }
+        else{
+            alert("Yanlış not girdiniz!");
+        }
+
+    }
+</script>

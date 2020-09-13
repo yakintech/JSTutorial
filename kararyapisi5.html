@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" name="" id="fiyat">
+    </div>
+    <div>
+        <button onclick="Hesap()">Hesapla</button>
+    </div>
+</body>
+
+</html>
+<script>
+    
+    //Ekrana bir input ve bir buton koy. Inputtan aldığın değer 100 den büyükse %20 indirim yap ve ekranda göster. Değilse +5 TL kargo parası ekle ve ekranda göster
+    function Hesap() {
+        var data = document.getElementById("fiyat").value;
+
+        if (data > 100) {
+            var sonuc = data * (80 / 100);
+            alert(sonuc.toFixed(2));
+        }
+        else {
+            alert("Toplam ücret: " + (Number(data) + 5) + " TLdir.");
+        }
+    }
+
+</script>
